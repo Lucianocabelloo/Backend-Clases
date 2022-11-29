@@ -34,3 +34,7 @@ class productManager{
 
 const ProductManager = new productManager(100);
 ProductManager.agregarProducto("Manteca","Hecho con base de leche",100,"#",1234,10)
+ProductManager.agregarProducto("Manteca","Hecho con base de leche",100,"#",1234,10)
+ProductManager.agregarProducto("Manteca","Hecho con base de leche",100,"#",1234,10)
+
+console.log(ProductManager.getProducts())
