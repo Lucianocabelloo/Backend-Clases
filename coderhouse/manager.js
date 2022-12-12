@@ -1,4 +1,4 @@
-const ProductManager = require("./ProductManager");
+const ProductManager = require("./productManager");
 
 const product1 = {
     id: 1,
@@ -19,7 +19,7 @@ const product1 = {
     stock: 30
   };
 
-  const productManager = new ProductManager([], "Products.json");
+  const productManager = new ProductManager([], "products.json");
 
   const runAwait = async () => {
     await productManager.addProducts(product1);
