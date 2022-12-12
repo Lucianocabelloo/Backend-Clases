@@ -66,8 +66,8 @@ class ProductManager {
                 } else {
                     this.products = JSON.parse(data);
                     this.products = this.products.filter((product) => product.id !== id)
-                    fs.writeFile
-                    resolve()
+                    
+                    resolve(fs.writeFile)
                 }
             })
         })
@@ -89,7 +89,4 @@ class ProductManager {
     }
         }
 
-        const productManager = new ProductManager(100);
-        console.log(productManager.getProducts())
-
-        module.exports = ProductManager
+        module.exports = ProductManager;
