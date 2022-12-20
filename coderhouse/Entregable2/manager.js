@@ -26,7 +26,7 @@ const runAwait = async () => {
   await productManager.addProduct(product);
   await productManager.addProduct(product2);
 
-console.info("Funcion GetPrudcts")
+//console.info("Funcion GetPrudcts")
 
   const products = await productManager.getproducts();
   console.log("getproducts", products);
